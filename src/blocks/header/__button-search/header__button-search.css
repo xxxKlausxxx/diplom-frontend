@@ -1,0 +1,26 @@
+.header__button-search {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 100px;
+  border: none;
+  line-height: 24px;
+  position: absolute;
+  right: 34%;
+  min-height: 64px;
+  color: white;
+  background-color: #2F71E5;
+  width: 9%;
+}
+
+.header__button-search:hover {
+  cursor: pointer;
+  background-color: #347EFF;
+}
+
+.header__button-search:focus {
+  cursor: pointer;
+  outline: none !important;
+  background-color: #2A65CC;
+}

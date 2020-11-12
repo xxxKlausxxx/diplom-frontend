@@ -1,0 +1,8 @@
+@import url('./__title/cards__title.css');
+@import url('./__container/cards__container.css');
+
+.cards {
+  max-width: 1440px;
+  width: 100%;
+  margin: auto;
+}

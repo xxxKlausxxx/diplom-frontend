@@ -1,0 +1,28 @@
+.header__search{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #B6BCBF;
+  border-radius: 100px;
+  border: none;
+  position: absolute;
+  width: 30%;
+  right: 36%;
+  min-height: 64px;
+  padding-left: 24px;
+}
+
+.header__search:focus {
+  outline: none !important;
+}
+
+.header__search, textarea {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1A1B22;
+}

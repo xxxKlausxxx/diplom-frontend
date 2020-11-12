@@ -1,0 +1,9 @@
+.header__menu {
+  width: inherit;
+  max-width: 1440px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 7% 0 7%;
+  box-sizing: border-box;
+  box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.2);
+}

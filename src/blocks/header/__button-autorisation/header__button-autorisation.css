@@ -1,0 +1,17 @@
+.header__button-autorisation {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  border-radius: 100px;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid #FFFFFF;
+  color: white;
+  padding: 5% 10% 5% 10%;
+}
+
+.header__button-autorisation:hover {
+  cursor: pointer;
+}

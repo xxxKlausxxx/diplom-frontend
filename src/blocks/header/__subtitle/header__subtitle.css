@@ -1,0 +1,13 @@
+.header__subtitle{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: white;
+  width: 40%;
+  margin-top: 32px;
+  margin-right: auto;
+  margin-left: 29%;
+  text-align: left;
+}
