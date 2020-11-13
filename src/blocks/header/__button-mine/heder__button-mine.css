@@ -16,5 +16,5 @@
 }
 
 .header__button-mine:hover {
-  cursor: pointer;
+  cursor: url('../../../images/Pointer.png'), pointer;
 }

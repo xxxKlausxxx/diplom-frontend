@@ -1,1 +1,5 @@
 @import url('./__form_button/show-more__form_button.css');
+
+.show-more{
+  display: none;
+}

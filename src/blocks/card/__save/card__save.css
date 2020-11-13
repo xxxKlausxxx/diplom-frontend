@@ -1,6 +1,6 @@
 .card__save{
-  position: relative;
-  z-index: 1;
-  left: 84%;
-  top: 7%;
+  margin: 6% 6% auto 1%;
+  width: 40px;
+  height: 40px;
+
 }

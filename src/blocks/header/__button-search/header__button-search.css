@@ -15,12 +15,12 @@
 }
 
 .header__button-search:hover {
-  cursor: pointer;
+  cursor: url('../../../images/Pointer.png'), pointer;
   background-color: #347EFF;
 }
 
 .header__button-search:focus {
-  cursor: pointer;
+  cursor: url('../../../images/Pointer.png'), pointer;
   outline: none !important;
   background-color: #2A65CC;
 }

@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="./pages/index.css">
 </head>
 <body>
+      <!-- Хедер -->
   <header class="header">
     <div class="header__menu">
       <h2 class="header__logo">NewsExplorer</h2>
@@ -28,12 +29,14 @@
       <button class="header__button-search">Искать</button>
     </form>
   </header>
+      <!-- Контейнер с карточками -->
   <section class="cards">
     <h2 class="title cards__title">Результаты поиска</h2>
     <div class="cards__container">
       <!-- Карточки -->
       <div class="card">
       <div class="card__image" style="background: url(./images/card_image_1.jpg); background-size: cover;">
+        <div class="card__auth-title">Войдите, чтобы сохранять статьи</div>
         <form class="card__save" action="#">
           <button class="card__button"></button>
         </form>
@@ -48,9 +51,10 @@
       </div>
       <div class="card">
         <div class="card__image" style="background: url(./images/card_image_2.jpg); background-size: cover;">
-        <form class="card__save" action="#">
-          <button class="card__button"></button>
-        </form>
+          <div class="card__auth-title">Войдите, чтобы сохранять статьи</div>
+          <form class="card__save" action="#">
+            <button class="card__button"></button>
+          </form>
         </div>
         <div class="card__container">
           <p class="card__date">2 августа 2019</p>
@@ -62,9 +66,10 @@
       </div>
       <div class="card">
         <div class="card__image" style="background: url(./images/card_image_3.jpg); background-size: cover;">
-        <form class="card__save" action="#">
-          <button class="card__button"></button>
-        </form>
+          <div class="card__auth-title">Войдите, чтобы сохранять статьи</div>
+          <form class="card__save" action="#">
+            <button class="card__button"></button>
+          </form>
         </div>
         <div class="card__container">
           <p class="card__date">2 августа 2019</p>
@@ -74,14 +79,36 @@
           <p class="card__site">РИА</p>
         </div>
       </div>
-      <!-- -------------------------------------------------- -->
     </div>
   </section>
+      <!-- Показать еще -->
   <section class="show-more">
       <form class="show-more__form">
           <button class="show-more__form show-more__form_button">Показать еще</button>
       </form>
-    </section>
+  </section>
+      <!-- Прелоадер -->
+  <section class="preloader">
+    <div class="preloader__circle"></div>
+    <p class="preloader__text">Идет поиск новостей...</p>
+  </section>
+      <!-- Ничего не найдено -->
+  <section class="not-found">
+    <div class="not-found__image"></div>
+    <h3 class="not-found__title">Ничего не найдено</h3>
+    <p class="not-found__text">К сожалению по вашему запросу
+      ничего не найдено.</p>
+  </section>
+      <!-- Об авторе -->
+  <section class="about-author">
+    <img class="about-author__foto" src="images/image-03.jpg" alt="Фото автора">
+    <div class="about-author__container">
+      <h2 class="about-author__title">Об авторе</h2>
+      <p class="about-author__text">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.</p>
+      <p class="about-author__text">Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь потенциальным заказчикам.</p>
+    </div>
+  </section>
+      <!-- Попапы -->
   <div class="popup popup__entry">
     <div class="popup__content">
       <img src="./images/close.svg" alt="Закрыть" class="popup__close">

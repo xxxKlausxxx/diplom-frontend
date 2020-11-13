@@ -5,4 +5,9 @@
   max-width: 1440px;
   width: 100%;
   margin: auto;
+  display: none;
+}
+
+.cards__active {
+  display: block !important;
 }
