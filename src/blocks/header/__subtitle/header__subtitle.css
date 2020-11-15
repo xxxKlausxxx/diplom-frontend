@@ -11,3 +11,8 @@
   margin-left: 29%;
   text-align: left;
 }
+
+.header__subtitle_articles {
+  color: rgba(26, 27, 34, 0.5);
+  margin-left: 7%;
+}

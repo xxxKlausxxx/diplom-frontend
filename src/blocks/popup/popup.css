@@ -6,6 +6,9 @@
 @import url('./__button/popup__button.css');
 @import url('./__or/popup__or.css');
 @import url('./__is-opened/popup__is-opened.css');
+@import url('./__access/popup__access.css');
+@import url('./__access-link/popup__access-link.css');
+@import url('./__content_access/popup__content_access.css');
 
 
 .popup {
