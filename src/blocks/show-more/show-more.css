@@ -3,3 +3,7 @@
 .show-more{
   display: none;
 }
+
+.show-more__active {
+  display: block !important;
+}
