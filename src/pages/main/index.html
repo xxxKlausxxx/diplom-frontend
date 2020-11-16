@@ -5,19 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta author="einazarov" description="NewsExplorer" >
-  <link rel="News icon" href="./images/Favicon.svg" type="image/png">
-  <title>News</title>
+  <link rel="News icon" href="../../images/Favicon.svg" type="image/svg">
+  <title>News Explorer</title>
 
-  <link rel="stylesheet" href="./pages/index.css">
+  <link rel="stylesheet" href="./index.css">
 </head>
 <body>
       <!-- Хедер -->
   <header class="header">
     <div class="header__menu">
       <h2 class="header__logo">NewsExplorer</h2>
-      <ul class="header__list">
+      <ul class="header__list header__list_logout">
         <li><button class="header__button-mine">Главная</button> </li>
         <li><button class="header__button-autorisation">Авторизоваться</button></li>
+      </ul>
+      <ul class="header__list header__list_login header__list_active">
+        <li><button class="header__button-mine header__button-mine_login">Главная</button></li>
+        <li><button class="header__button-savenews">Сохранённые статьи</button></li>
+        <li><button class="header__button-autorisation header__button-autorisation_exit">Грета<img class="header__exit-image"src="../../images/logout.svg" alt="Выход"></button></li>
       </ul>
     </div>
     <div class="header__container">
@@ -35,7 +40,7 @@
     <div class="cards__container">
       <!-- Карточки -->
       <div class="card">
-      <div class="card__image" style="background: url(./images/card_image_1.jpg); background-size: cover;">
+      <div class="card__image" style="background: url(../../images/card_image_1.jpg); background-size: cover;">
         <div class="card__auth-title">Войдите, чтобы сохранять статьи</div>
         <form class="card__save" action="#">
           <button class="card__button"></button>
@@ -50,7 +55,7 @@
         </div>
       </div>
       <div class="card">
-        <div class="card__image" style="background: url(./images/card_image_2.jpg); background-size: cover;">
+        <div class="card__image" style="background: url(../../images/card_image_2.jpg); background-size: cover;">
           <div class="card__auth-title">Войдите, чтобы сохранять статьи</div>
           <form class="card__save" action="#">
             <button class="card__button"></button>
@@ -65,7 +70,7 @@
         </div>
       </div>
       <div class="card">
-        <div class="card__image" style="background: url(./images/card_image_3.jpg); background-size: cover;">
+        <div class="card__image" style="background: url(../../images/card_image_3.jpg); background-size: cover;">
           <div class="card__auth-title">Войдите, чтобы сохранять статьи</div>
           <form class="card__save" action="#">
             <button class="card__button"></button>
@@ -101,17 +106,47 @@
   </section>
       <!-- Об авторе -->
   <section class="about-author">
-    <img class="about-author__foto" src="images/image-03.jpg" alt="Фото автора">
+    <img class="about-author__foto" src="../../images/image-03.jpg" alt="Фото автора">
     <div class="about-author__container">
       <h2 class="about-author__title">Об авторе</h2>
       <p class="about-author__text">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.</p>
       <p class="about-author__text">Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь потенциальным заказчикам.</p>
     </div>
   </section>
+      <!-- Футер -->
+  <footer class="footer">
+    <p class="footer__copyright">© 2020 Supersite, Powered by News API</p>
+    <div class="footer__container">
+      <nav class="footer__nav">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="link footer__link" href="./index.html">Главная</a>
+          </li>
+          <li class="footer__item">
+            <a class="link footer__link" href="https://praktikum.yandex.ru/">Яндекс.Практикум</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="footer__social">
+        <ul class="footer__list-social">
+          <li class="footer__item-social">
+            <a class="link footer__link-social" href="https://github.com/xxxKlausxxx">
+              <img src="../../images/github.svg" alt="Github">
+            </a>
+          </li>
+          <li class="footer__item-social">
+            <a class="link footer__link-social" href="#">
+              <img src="../../images/fb.svg" alt="Facebook">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
       <!-- Попапы -->
   <div class="popup popup__entry">
     <div class="popup__content">
-      <img src="./images/close.svg" alt="Закрыть" class="popup__close popup__close_entry">
+      <img src="../../images/close.svg" alt="Закрыть" class="popup__close">
       <h3 class="popup__title">Вход</h3>
       <form class="popup__form">
         <h4 class="popup__input_title">Email</h4>
@@ -127,7 +162,7 @@
   </div>
   <div class="popup popup__registration">
     <div class="popup__content">
-      <img src="./images/close.svg" alt="Закрыть" class="popup__close popup__close_registration">
+      <img src="../../images/close.svg" alt="Закрыть" class="popup__close">
       <h3 class="popup__title">Регистрация</h3>
       <form class="popup__form">
         <h4 class="popup__input_title">Email</h4>
@@ -142,6 +177,13 @@
         <button id="popup__button" class="popup__button popup__button_entry">Войти</button>
         <p class="popup__or">или <a href="#" class='popup__or popup__or_entry_link'>Войти</a></p>
       </form>
+    </div>
+  </div>
+  <div class="popup popup__access">
+    <div class="popup__content popup__content_access">
+      <img src="../../images/close.svg" alt="Закрыть" class="popup__close">
+      <h3 class="popup__title">Пользователь успешно зарегистрирован!</h3>
+      <a href="#" class="popup__access-link">Войти</a>
     </div>
   </div>
   <script src="Popup.js"></script>

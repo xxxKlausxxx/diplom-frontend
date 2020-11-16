@@ -1,0 +1,18 @@
+@import url('../../vendor/normalize.css');
+@import url('../../vendor/fonts.css');
+@import url('../../blocks/header/header.css');
+@import url('../../blocks/cards/cards.css');
+@import url('../../blocks/card/card.css');
+@import url('../../blocks/footer/footer.css');
+
+
+body {
+  background-color: #F5F6F7;
+  max-width: 1440px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}

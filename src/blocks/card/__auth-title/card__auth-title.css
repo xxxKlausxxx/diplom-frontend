@@ -15,6 +15,24 @@
   display: none;
 }
 
+.card__auth-tittle_keyword {
+  font-size: 14px;
+  line-height: 24px;
+  width: auto;
+  padding-left: 3%;
+  padding-right: 3%;
+  display: flex !important;
+  margin-left: 6%;
+}
+
+.card__auth-title_delete {
+  margin-right: 5px;
+  font-size: 12px;
+  line-height: 14px;
+  margin-left: 10%;
+  margin-top: 0;
+}
+
 .card__auth-title_active {
   display: flex !important;
 }

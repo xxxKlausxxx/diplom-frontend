@@ -14,3 +14,12 @@
   margin-left: auto;
   text-align: left;
 }
+
+.header__title_articles {
+  font-size: 40px;
+  line-height: 46px;
+  color: #1A1B22;
+  margin-left: 7%;
+  margin-top: 2%;
+  width: 30%;
+}

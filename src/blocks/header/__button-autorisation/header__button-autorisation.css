@@ -1,3 +1,5 @@
+@import url('./_exit/header__button-autorisation_exit.css');
+
 .header__button-autorisation {
   font-family: Roboto;
   font-style: normal;
@@ -10,6 +12,11 @@
   border: 1px solid #FFFFFF;
   color: white;
   padding: 5% 10% 5% 10%;
+}
+
+.header__button-autorization_articles {
+  border: 1px solid #1A1B22;
+  color: #1A1B22;
 }
 
 .header__button-autorisation:hover {

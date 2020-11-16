@@ -1,0 +1,9 @@
+.footer__list {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  padding: 0;
+  width: inherit;
+  margin-left: 19%;
+
+}
