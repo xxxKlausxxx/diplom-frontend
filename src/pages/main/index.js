@@ -1,14 +1,15 @@
-//import './pages/index.css';
+/* eslint-disable no-console */
+/* eslint-disable no-undef */
+// import './pages/index.css';
 
-const body = document.querySelector('body')
+const body = document.querySelector('body');
 
 const headerButtonAuth = document.querySelector('.header__button-autorisation');
 const popupButtonAuth = document.querySelector('.popup__button_registration');
 const popupButtonEntry = document.querySelector('.popup__button_entry');
 const popupReg = document.querySelector('.popup__registration');
 const popupEntry = document.querySelector('.popup__entry');
-const popupEntryAccess = document.querySelector('.popup__entry-access');
-const popupRegAccess = document.querySelector('.popup__registration-acces')
+const popupAccess = document.querySelector('.popup__access');
 const linkOrRegistration = document.querySelector('.popup__or_registration_link');
 const linkOrEntry = document.querySelector('.popup__or_entry_link');
 const popupCloseEntry = document.querySelector('.popup__close_entry');
@@ -21,70 +22,92 @@ const notFound = document.querySelector('.not-found');
 const cardButton = document.querySelector('.card__button');
 const cardAuthTitle = document.querySelector('.card__auth-title');
 const cardSave = document.querySelector('.card__save');
-const showMore = document.querySelector('.show-more')
+const showMore = document.querySelector('.show-more');
+const popupAccessLink = document.querySelector('.popup__access-link');
+const popupCloseAccess = document.querySelector('.popup__close_access');
+const headerListLogout = document.querySelector('.header__list_logout');
+const headerListLogin = document.querySelector('.header__list_login');
+const headerButtonAuthExit = document.querySelector('.header__button-autorisation_exit')
 
 const popupRegClass = new Popup(popupReg);
 const popupEntryClass = new Popup(popupEntry);
-const popupAccesEntryClass = new Popup(popupEntryAccess);
-const popupRegAccessClass = new Popup(popupRegAccess)
+const popupAccessClass = new Popup(popupAccess);
 
 headerButtonAuth.addEventListener('click', () => {
-    popupEntryClass.open()
+  popupEntryClass.open();
 });
 linkOrRegistration.addEventListener('click', () => {
-    popupEntryClass.close();
-    popupRegClass.open();
+  popupEntryClass.close();
+  popupRegClass.open();
 });
 linkOrEntry.addEventListener('click', () => {
-    popupRegClass.close();
-    popupEntryClass.open();
+  popupRegClass.close();
+  popupEntryClass.open();
 });
 popupCloseEntry.addEventListener('click', () => {
-    popupEntryClass.close();
+  popupEntryClass.close();
 });
 popupCloseReg.addEventListener('click', () => {
-    popupRegClass.close()
-})
-popupButtonEntry.addEventListener('click', () => {
-    popupAccesEntryClass.open();
-    popupEntryClass.close();
+  popupRegClass.close();
 });
-popupButtonAuth.addEventListener('click', () => {
-    popupRegAccessClass.open();
-    popupRegClass.close()
-})
+popupButtonEntry.addEventListener('click', () => {
+  popupAccesEntryClass.open();
+  popupEntryClass.close();
+});
+popupButtonAuth.addEventListener('click', (event) => {
+  event.preventDefault();
+  popupAccessClass.open();
+  popupRegClass.close();
+});
 buttonSearch.addEventListener('click', (event) => {
-    event.preventDefault();
-    console.log(event)
-    console.log(headerSearch)
-    if(headerSearch.value === 'Природа') {
-        preloader.classList.add('preloader__active');
-        setTimeout(function() {
-          preloader.classList.remove("preloader__active");
-          cards.classList.add("cards__active");
-          showMore.classList.add("show-more__active");
-        }, 2000);
-    } else {
-        preloader.classList.add('preloader__active');
-        setTimeout(function() {
-          preloader.classList.remove("preloader__active");
-          notFound.classList.add("not-found__active")
-        }, 2000);
-
-    }
+  event.preventDefault();
+  console.log(event);
+  console.log(headerSearch);
+  if (headerSearch.value === 'Природа') {
+    preloader.classList.add('preloader__active');
+    setTimeout(() => {
+      preloader.classList.remove('preloader__active');
+      cards.classList.add('cards__active');
+      showMore.classList.add('show-more__active');
+    }, 2000);
+  } else {
+    preloader.classList.add('preloader__active');
+    setTimeout(() => {
+      preloader.classList.remove('preloader__active');
+      notFound.classList.add('not-found__active');
+    }, 2000);
+  }
 });
 cardButton.addEventListener('click', (event) => {
-    event.preventDefault()
+  event.preventDefault();
 });
 
 cardSave.addEventListener('mouseover', (event) => {
-    event.preventDefault()
-    cardAuthTitle.classList.add('card__auth-title_active')
+  event.preventDefault();
+  cardAuthTitle.classList.add('card__auth-title_active');
 });
 cardButton.addEventListener('mouseout', (event) => {
-    event.preventDefault()
-    cardAuthTitle.classList.remove('card__auth-title_active')
+  event.preventDefault();
+  cardAuthTitle.classList.remove('card__auth-title_active');
 });
-body.addEventListener('click', (event) => {
-    console.log(event)
+popupAccessLink.addEventListener('click', () => {
+  popupEntryClass.open();
+  popupAccessClass.close();
+});
+popupCloseAccess.addEventListener('click', () => {
+  popupAccessClass.close();
+});
+popupButtonEntry.addEventListener('click', (event) => {
+  event.preventDefault();
+  headerListLogout.classList.remove('header__list_active');
+  headerListLogin.classList.add('header__list_active');
+  popupEntryClass.close();
+});
+headerButtonAuthExit.addEventListener('click', (event) => {
+  event.preventDefault();
+  headerListLogout.classList.add('header__list_active');
+  headerListLogin.classList.remove('header__list_active');
 })
+body.addEventListener('click', (event) => {
+  console.log(event);
+});

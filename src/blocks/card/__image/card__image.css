@@ -5,5 +5,16 @@
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
   display: flex;
+  justify-content: flex-end;
+}
+
+.card__image-articles {
+  background-size: cover;
+  background-position: center;
+  height: 272px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  display: flex;
   justify-content: space-between;
+
 }

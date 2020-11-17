@@ -3,7 +3,7 @@
 @import url('../../blocks/popup/popup.css');
 @import url('../../blocks/header/header.css');
 @import url('../../blocks/cards/cards.css');
-@import url('../blocks/card/card.css');
+@import url('../../blocks/card/card.css');
 @import url('../../blocks/show-more/show-more.css');
 @import url('../../blocks/preloader/preloader.css');
 @import url('../../blocks/not-found/not-found.css');

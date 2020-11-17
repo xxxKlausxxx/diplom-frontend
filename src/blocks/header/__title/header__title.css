@@ -5,8 +5,8 @@
 }
 
 .header__title{
-  font-size: 60px;
-  line-height: 64px;
+  font-size: 3.75rem;
+  line-height: 1;
   color: white;
   width: 42%;
   margin-top: 88px;
@@ -16,8 +16,8 @@
 }
 
 .header__title_articles {
-  font-size: 40px;
-  line-height: 46px;
+  font-size: 2.5rem;
+  line-height: 1;
   color: #1A1B22;
   margin-left: 7%;
   margin-top: 2%;

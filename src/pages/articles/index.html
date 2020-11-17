@@ -15,9 +15,9 @@
     <div class="header__menu header__menu_articles">
       <h2 class="header__logo header__logo_articles">NewsExplorer</h2>
       <ul class="header__list header__list_login header__list_active">
-        <li><button class="header__button-mine header__button-mine_articles">Главная</button></li>
+        <li><button class="header__button-mine header__button-mine_articles" onclick="location.href='../../pages/main/index.html'">Главная</button></li>
         <li><button class="header__button-savenews header__button-savenews_articles">Сохранённые статьи</button></li>
-        <li><button class="header__button-autorisation header__button-autorisation_exit header__button-autorization_articles">Грета<img class="header__exit-image"src="../../images/logout-dark.svg" alt="Выход"></button></li>
+        <li><button class="header__button-autorisation header__button-autorisation_exit header__button-autorization_articles" onclick="location.href='../../pages/main/index.html'">Грета<img class="header__exit-image"src="../../images/logout-dark.svg" alt="Выход"></button></li>
       </ul>
     </div>
     <div class="header__articles-container">
@@ -31,7 +31,7 @@
     <div class="cards__container">
       <!-- Карточки -->
       <div class="card">
-      <div class="card__image" style="background: url(../../images/card_image_4.jpg); background-size: cover;">
+      <div class="card__image-articles" style="background: url(../../images/card_image_4.jpg); background-size: cover;">
         <div class="card__auth-title card__auth-tittle_keyword">Природа</div>
         <div class="card__image-container">
           <div class="card__auth-title card__auth-title_delete">Убрать из сохранённых</div>
@@ -47,7 +47,7 @@
         </div>
       </div>
       <div class="card">
-        <div class="card__image" style="background: url(../../images/card_image_5.jpg); background-size: cover;">
+        <div class="card__image-articles" style="background: url(../../images/card_image_5.jpg); background-size: cover;">
           <div class="card__auth-title card__auth-tittle_keyword">Природа</div>
           <div class="card__image-container">
             <div class="card__auth-title card__auth-title_delete">Убрать из сохранённых</div>
@@ -63,7 +63,7 @@
         </div>
       </div>
       <div class="card">
-        <div class="card__image" style="background: url(../../images/card_image_6.jpg); background-size: cover;">
+        <div class="card__image-articles" style="background: url(../../images/card_image_6.jpg); background-size: cover;">
           <div class="card__auth-title card__auth-tittle_keyword">Тайга</div>
           <div class="card__image-container">
             <div class="card__auth-title card__auth-title_delete">Убрать из сохранённых</div>
@@ -79,7 +79,7 @@
         </div>
       </div>
       <div class="card">
-        <div class="card__image" style="background: url(../../images/card_image_4.jpg); background-size: cover;">
+        <div class="card__image-articles" style="background: url(../../images/card_image_4.jpg); background-size: cover;">
           <div class="card__auth-title card__auth-tittle_keyword">Парки</div>
           <div class="card__image-container">
             <div class="card__auth-title card__auth-title_delete">Убрать из сохранённых</div>
@@ -95,7 +95,7 @@
         </div>
       </div>
       <div class="card">
-        <div class="card__image" style="background: url(../../images/card_image_5.jpg); background-size: cover;">
+        <div class="card__image-articles" style="background: url(../../images/card_image_5.jpg); background-size: cover;">
           <div class="card__auth-title card__auth-tittle_keyword">Фотография</div>
           <div class="card__image-container">
             <div class="card__auth-title card__auth-title_delete">Убрать из сохранённых</div>
@@ -122,19 +122,19 @@
             <a class="link footer__link" href="../../pages/main/index.html">Главная</a>
           </li>
           <li class="footer__item">
-            <a class="link footer__link" href="https://praktikum.yandex.ru/">Яндекс.Практикум</a>
+            <a class="link footer__link" href="https://praktikum.yandex.ru/" target="_blank">Яндекс.Практикум</a>
           </li>
         </ul>
       </nav>
       <div class="footer__social">
         <ul class="footer__list-social">
           <li class="footer__item-social">
-            <a class="link footer__link-social" href="https://github.com/xxxKlausxxx">
+            <a class="link footer__link-social" href="https://github.com/xxxKlausxxx" target="_blank">
               <img src="../../images/github.svg" alt="Github">
             </a>
           </li>
           <li class="footer__item-social">
-            <a class="link footer__link-social" href="#">
+            <a class="link footer__link-social" href="#" target="_blank">
               <img src="../../images/fb.svg" alt="Facebook">
             </a>
           </li>
@@ -142,4 +142,6 @@
       </div>
     </div>
   </footer>
+  <script src="index.js"></script>
 </body>
+</html>

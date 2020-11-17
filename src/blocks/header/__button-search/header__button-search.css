@@ -7,11 +7,13 @@
   border: none;
   line-height: 24px;
   position: absolute;
-  right: 34%;
+  right: 31%;
   min-height: 64px;
   color: white;
   background-color: #2F71E5;
-  width: 9%;
+  width: 160px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .header__button-search:hover {

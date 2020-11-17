@@ -13,3 +13,6 @@
   background: url('../../../images/delete_dark.svg');
   cursor: url('../../../images/Pointer.png'), pointer;
 }
+.card__delete:focus {
+  outline: none;
+}
