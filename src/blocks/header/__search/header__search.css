@@ -26,3 +26,11 @@
   line-height: 22px;
   color: #1A1B22;
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .header__search {
+    width: 56%;
+    right: 23%;
+    min-height: 56px;
+  }
+}

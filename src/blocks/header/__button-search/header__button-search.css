@@ -26,3 +26,10 @@
   outline: none !important;
   background-color: #2A65CC;
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .header__button-search {
+    right: 23%;
+    min-height: 56px;
+  }
+}
