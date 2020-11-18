@@ -1,4 +1,8 @@
 .about-author__foto {
   margin: auto 56px auto 104px;
-  
+  max-width: 460px;
+  width: 45%;
+  height: 70%;
+  object-fit: cover;
+
 }

@@ -2,7 +2,14 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
-  line-height: 22px;
+  font-size: 1rem;
+  line-height: 1.375;
   margin: 16px auto 18px 6%;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .card__text {
+    height: 88px;
+    overflow: hidden;
+  }
 }

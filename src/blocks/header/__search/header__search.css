@@ -7,9 +7,9 @@
   color: #B6BCBF;
   border-radius: 100px;
   border: none;
-  position: absolute;
+  position: inherit;
+  margin-left: 143px;
   width: 40%;
-  right: 31%;
   min-height: 64px;
   padding-left: 24px;
 }
@@ -27,10 +27,21 @@
   color: #1A1B22;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 1440px) and (max-width: 120000px) {
+  .header__search {
+    width: 608px;
+  }
+}
+
+@media (max-width: 1024px) {
   .header__search {
     width: 56%;
     right: 23%;
     min-height: 56px;
+  }
+}
+@media (max-width: 697px) {
+  .header__search {
+    margin-left: 0;
   }
 }

@@ -10,3 +10,9 @@
 .header__list_active {
   display: flex;
 }
+
+@media (max-width: 500px) {
+  .header__list {
+    display: none;
+  }
+}
