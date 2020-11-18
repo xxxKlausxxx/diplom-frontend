@@ -41,3 +41,9 @@
     margin-top: 3%;
   }
 }
+
+@media (min-width: 550px) and (max-width: 600px) {
+  .card__auth-title {
+    margin-top: 3%;
+  }
+}

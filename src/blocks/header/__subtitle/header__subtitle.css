@@ -28,3 +28,10 @@
     margin-left: 7%;
   }
 }
+
+@media (max-width: 424px) {
+  .header__subtitle {
+    margin: 7%;
+    width: fit-content;
+  }
+}

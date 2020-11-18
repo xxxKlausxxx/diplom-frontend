@@ -21,3 +21,8 @@
     min-height: 420px;
   }
 }
+@media (min-width: 550px) and (max-width: 600px) {
+  .card {
+    min-height: 420px;
+  }
+}

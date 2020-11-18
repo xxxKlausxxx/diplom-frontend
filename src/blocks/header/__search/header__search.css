@@ -12,6 +12,7 @@
   width: 40%;
   min-height: 64px;
   padding-left: 24px;
+  margin-bottom: 16px;
 }
 
 .header__search:focus {
@@ -43,5 +44,12 @@
 @media (max-width: 697px) {
   .header__search {
     margin-left: 0;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 424px) {
+  .header__search {
+    width: 85%;
   }
 }

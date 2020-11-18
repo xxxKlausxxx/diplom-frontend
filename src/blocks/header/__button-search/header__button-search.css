@@ -46,5 +46,12 @@
     position: static;
     width: 56%;
     margin-top: 16px;
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 424px) {
+  .header__button-search {
+    width: 85%;
   }
 }

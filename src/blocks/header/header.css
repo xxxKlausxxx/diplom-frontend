@@ -12,11 +12,12 @@
 @import url('../header/__button-savenews/header__button-savenews.css');
 @import url('../header/__exit-image/header__exit-image.css');
 @import url('../header/__keywords/header__keywords.css');
+@import url('../header/__dropout-button/header__dropout-button.css');
 
 .header {
   background-image: url('../../images/header-image.jpg');
-  min-height: 576px;
   width: 100%;
+  height: auto;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

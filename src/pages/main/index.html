@@ -15,8 +15,7 @@
   <header class="header">
     <div class="header__menu">
       <h2 class="header__logo">NewsExplorer</h2>
-      <button class="header__dropout-button"><img class="dropout__menu" src="../../images/main_menu.svg" alt="Меню">
-        <img class="dropout__close" src="../../images/close.svg" alt="Закрыть"></button>
+      <button class="header__dropout-button"><img class="header__dropout-menu" src="../../images/main_menu.svg" alt="Меню"></button>
       <ul class="header__list header__list_logout header__list_active">
         <li><button class="header__button-mine">Главная</button></li>
         <li><button class="header__button-autorisation">Авторизоваться</button></li>
@@ -37,7 +36,7 @@
     </form>
   </header>
       <!-- Контейнер с карточками -->
-   <section class="cards">
+   <section class="cards cards__active">
     <h2 class="title cards__title">Результаты поиска</h2>
     <div class="cards__container">
       <!-- Карточки -->
@@ -186,6 +185,17 @@
       <img src="../../images/close.svg" alt="Закрыть" class="popup__close popup__close_access">
       <h3 class="popup__title">Пользователь успешно зарегистрирован!</h3>
       <a href="#" class="popup__access-link">Войти</a>
+    </div>
+  </div>
+  <div class="popup popup__menu" >
+    <div class="popup__content popup__content_menu">
+      <div class="header__menu popup__menu">
+        <h2 class="header__logo">NewsExplorer</h2>
+        <button class="header__dropout-button"><img class="header__dropout-menu" src="../../images/close_menu.svg" alt="Меню">
+      </div>
+      <button class="header__button-mine popup__button-mine">Главная</button>
+      <button class="header__button-savenews popup__button-savenews" onclick="location.href='../articles/index.html'">Сохранённые статьи</button>
+      <button class="header__button-autorisation popup__button-autorisation">Авторизоваться</button>
     </div>
   </div>
   <script src="Popup.js"></script>

@@ -11,3 +11,9 @@
     margin: 3% 3% auto 1%
   }
 }
+
+@media (min-width: 550px) and (max-width: 600px) {
+  .card__image-container {
+    margin: 3% 3% auto 1%
+  }
+}

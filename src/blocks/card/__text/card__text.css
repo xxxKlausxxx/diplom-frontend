@@ -13,3 +13,9 @@
     overflow: hidden;
   }
 }
+@media (min-width: 550px) and (max-width: 600px) {
+  .card__text {
+    height: 88px;
+    overflow: hidden;
+  }
+}

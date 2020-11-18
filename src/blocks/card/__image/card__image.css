@@ -24,3 +24,9 @@
     height: 150px;
   }
 }
+
+@media (min-width: 550px) and (max-width: 600px) {
+  .card__image {
+    height: 150px;
+  }
+}

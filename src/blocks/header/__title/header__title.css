@@ -34,3 +34,11 @@
     margin-left: 7%;
   }
 }
+
+@media (max-width: 424px) {
+  .header__title {
+    margin-left: 7%;
+    margin-top: 20px;
+    width: fit-content;
+  }
+}
