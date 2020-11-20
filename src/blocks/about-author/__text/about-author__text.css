@@ -6,3 +6,15 @@
   line-height: 1.4;
   width: 75%;
 }
+
+@media (max-width: 768px) {
+  .about-author__text {
+    width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-author__text {
+    margin-left: 5%;
+  }
+}

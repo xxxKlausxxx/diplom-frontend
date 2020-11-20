@@ -5,5 +5,17 @@
   padding: 0;
   width: inherit;
   margin-left: 19%;
+  width: 80%;
+}
 
+@media (max-width: 1024px) {
+  .footer__list {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 475px) {
+  .footer__list {
+    flex-direction: column;
+  }
 }

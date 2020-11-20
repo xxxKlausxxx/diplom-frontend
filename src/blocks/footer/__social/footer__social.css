@@ -2,3 +2,10 @@
   width:20%;
   margin-right: 5%;
 }
+
+@media (max-width: 475px) {
+  .footer__social {
+    width: 40%;
+    margin-right: 0;
+  }
+}

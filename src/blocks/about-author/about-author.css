@@ -12,3 +12,16 @@
   justify-content: center;
   min-height: 624px;
 }
+
+@media (max-width: 768px) {
+  .about-author {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-author {
+    display: flex;
+    flex-direction: column;
+  }
+}
