@@ -7,6 +7,7 @@ const body = document.querySelector('body');
 const headerButtonAuth = document.querySelector('.header__button-autorisation');
 const popupButtonAuth = document.querySelector('.popup__button_registration');
 const popupButtonEntry = document.querySelector('.popup__button_entry');
+const popupButtonMenuAuth = document.querySelector('.popup__button-autorisation');
 const popupReg = document.querySelector('.popup__registration');
 const popupEntry = document.querySelector('.popup__entry');
 const popupAccess = document.querySelector('.popup__access');
@@ -27,11 +28,17 @@ const popupAccessLink = document.querySelector('.popup__access-link');
 const popupCloseAccess = document.querySelector('.popup__close_access');
 const headerListLogout = document.querySelector('.header__list_logout');
 const headerListLogin = document.querySelector('.header__list_login');
-const headerButtonAuthExit = document.querySelector('.header__button-autorisation_exit')
+const headerButtonAuthExit = document.querySelector('.header__button-autorisation_exit');
+const headerDropoutMenu = document.querySelector('.header__dropout-menu');
+const popupMenu = document.querySelector('.popup__menu');
+const popupMenuClose = document.querySelector('.popup__menu-close');
+const headerMenu = document.querySelector('.header__menu');
+const dropoutButton = document.querySelector('.header__dropout-button');
 
 const popupRegClass = new Popup(popupReg);
 const popupEntryClass = new Popup(popupEntry);
 const popupAccessClass = new Popup(popupAccess);
+const popupMenuClass = new Popup(popupMenu);
 
 headerButtonAuth.addEventListener('click', () => {
   popupEntryClass.open();
@@ -46,9 +53,15 @@ linkOrEntry.addEventListener('click', () => {
 });
 popupCloseEntry.addEventListener('click', () => {
   popupEntryClass.close();
+  if (innerWidth <= 500) {
+    dropoutButton.classList.remove('header__dropout-button_disable')
+  }
 });
 popupCloseReg.addEventListener('click', () => {
   popupRegClass.close();
+  if (innerWidth <= 500) {
+    dropoutButton.classList.remove('header__dropout-button_disable')
+  }
 });
 popupButtonEntry.addEventListener('click', () => {
   popupAccesEntryClass.open();
@@ -111,3 +124,18 @@ headerButtonAuthExit.addEventListener('click', (event) => {
 body.addEventListener('click', (event) => {
   console.log(event);
 });
+headerDropoutMenu.addEventListener('click', () => {
+  popupMenuClass.open();
+})
+popupMenuClose.addEventListener('click', () => {
+  popupMenuClass.close();
+})
+popupButtonMenuAuth.addEventListener('click', () => {
+  popupEntryClass.open();
+  popupMenuClass.close();
+  headerMenu.classList.add('header__menu_popup-mobile')
+  dropoutButton.classList.add('header__dropout-button_disable')
+})
+
+
+

@@ -6,6 +6,8 @@
   line-height: 24px;
   color: white;
   margin-top: 23px;
+  position: relative;
+  z-index: 2;
 }
 
 .header__logo_articles {

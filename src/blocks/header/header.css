@@ -13,6 +13,8 @@
 @import url('../header/__exit-image/header__exit-image.css');
 @import url('../header/__keywords/header__keywords.css');
 @import url('../header/__dropout-button/header__dropout-button.css');
+@import url('../header/__menu/_popup-mobile/header__menu_popup-mobile.css');
+@import url('../header/__dropout-button/_disable/header__dropout-button_disable.css');
 
 .header {
   background-image: url('../../images/header-image.jpg');
