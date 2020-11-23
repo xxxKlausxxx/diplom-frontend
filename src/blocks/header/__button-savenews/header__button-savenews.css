@@ -16,9 +16,17 @@
 
 .header__button-savenews_articles {
   border-bottom: #1A1B22 solid 3px;
-  color: #1A1B22;
+  color: #1A1B22 !important;
 }
 
 .header__button-savenews:hover {
   cursor: url('../../../images/Pointer.png'), pointer;
+}
+
+@media (max-width: 655px) {
+  .header__button-savenews {
+    margin-right: 10px;
+    width: 82%;
+    padding-bottom: 0;
+  }
 }

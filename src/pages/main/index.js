@@ -1,6 +1,8 @@
+/* eslint-disable no-restricted-globals */
 /* eslint-disable no-console */
 /* eslint-disable no-undef */
-// import './pages/index.css';
+import './index.css';
+import Popup from './Popup';
 
 const body = document.querySelector('body');
 
@@ -54,13 +56,13 @@ linkOrEntry.addEventListener('click', () => {
 popupCloseEntry.addEventListener('click', () => {
   popupEntryClass.close();
   if (innerWidth <= 500) {
-    dropoutButton.classList.remove('header__dropout-button_disable')
+    dropoutButton.classList.remove('header__dropout-button_disable');
   }
 });
 popupCloseReg.addEventListener('click', () => {
   popupRegClass.close();
   if (innerWidth <= 500) {
-    dropoutButton.classList.remove('header__dropout-button_disable')
+    dropoutButton.classList.remove('header__dropout-button_disable');
   }
 });
 popupButtonEntry.addEventListener('click', () => {
@@ -120,22 +122,19 @@ headerButtonAuthExit.addEventListener('click', (event) => {
   event.preventDefault();
   headerListLogout.classList.add('header__list_active');
   headerListLogin.classList.remove('header__list_active');
-})
+});
 body.addEventListener('click', (event) => {
   console.log(event);
 });
 headerDropoutMenu.addEventListener('click', () => {
   popupMenuClass.open();
-})
+});
 popupMenuClose.addEventListener('click', () => {
   popupMenuClass.close();
-})
+});
 popupButtonMenuAuth.addEventListener('click', () => {
   popupEntryClass.open();
   popupMenuClass.close();
-  headerMenu.classList.add('header__menu_popup-mobile')
-  dropoutButton.classList.add('header__dropout-button_disable')
-})
-
-
-
+  headerMenu.classList.add('header__menu_popup-mobile');
+  dropoutButton.classList.add('header__dropout-button_disable');
+});

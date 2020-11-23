@@ -15,6 +15,8 @@
 @import url('../header/__dropout-button/header__dropout-button.css');
 @import url('../header/__menu/_popup-mobile/header__menu_popup-mobile.css');
 @import url('../header/__dropout-button/_disable/header__dropout-button_disable.css');
+@import url('../header/__list/_login/header__list_login.css');
+@import url('../header/__dropout-menu/_article/header__dropout-menu_article.css');
 
 .header {
   background-image: url('../../images/header-image.jpg');
@@ -31,6 +33,8 @@
   min-height: 350px;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
-  
+@media(max-width: 1024px) {
+  .header {
+    min-height: 400px;
+  }
 }

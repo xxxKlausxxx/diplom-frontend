@@ -23,3 +23,9 @@
 .header__button-mine:hover {
   cursor: url('../../../images/Pointer.png'), pointer;
 }
+
+@media (max-width: 655px) {
+  .header__button-mine {
+    margin-right: 10px;
+  }
+}

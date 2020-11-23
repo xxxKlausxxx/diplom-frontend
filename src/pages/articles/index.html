@@ -4,20 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta author="einazarov" description="Saved News" >
-  <link rel="News icon" href="../../images/Favicon.svg" type="image/svg">
+  <link rel="News icon" href="<%=require('../../images/Favicon.svg')%>" type="image/svg">
   <title>News Explorer | Saved News</title>
-  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>">
 </head>
 <body>
   <!-- Хедер -->
   <header class="header header__articles">
     <div class="header__menu header__menu_articles">
       <h2 class="header__logo header__logo_articles">NewsExplorer</h2>
+      <button class="header__dropout-button"><img class="header__dropout-menu" src="../../images/main-menu-dark.svg" alt="Меню"></button>
       <ul class="header__list header__list_login header__list_active">
         <li><button class="header__button-mine header__button-mine_articles" onclick="location.href='../../pages/main/index.html'">Главная</button></li>
         <li><button class="header__button-savenews header__button-savenews_articles">Сохранённые статьи</button></li>
-        <li><button class="header__button-autorisation header__button-autorisation_exit header__button-autorization_articles" onclick="location.href='../../pages/main/index.html'">Грета<img class="header__exit-image"src="../../images/logout-dark.svg" alt="Выход"></button></li>
+        <li><button class="header__button-autorisation header__button-autorisation_exit header__button-autorization_articles" onclick="location.href='../../pages/main/index.html'">Грета<img class="header__exit-image" src="<%=require('../../images/logout-dark.svg')%>" alt="Выход"></button></li>
       </ul>
     </div>
     <div class="header__articles-container">
@@ -112,6 +112,18 @@
       </div>
     </div>
   </section>
+  <!-- Открытие меню -->
+  <div class="popup popup__menu" >
+    <div class="popup__content popup__content_menu popup__content_article">
+      <div class="header__menu popup__menu popup__menu_article">
+        <h2 class="header__logo header__logo_articles">NewsExplorer</h2>
+        <button class="header__dropout-button popup__menu-close header__dropout-menu_article"><img class="header__dropout-menu" src="<%=require('../../images/close_menu_dark.svg')%>" alt="Меню"></button>
+      </div>
+      <button class="header__button-mine popup__button-mine header__button-mine_articles" onclick="location.href='../../pages/main/index.html'">Главная</button>
+      <button class="header__button-savenews popup__button-savenews header__button-savenews_articles" onclick="location.href='../articles/index.html'">Сохранённые статьи</button>
+      <button class="popup__button-autorisation header__button-autorisation header__button-autorisation_exit header__button-autorization_articles" onclick="location.href='../../pages/main/index.html'">Грета<img class="header__exit-image" src="../../images/logout-dark.svg" alt="Выход"></button>
+    </div>
+  </div>
   <!-- Футер -->
   <footer class="footer">
     <p class="footer__copyright">© 2020 Supersite, Powered by News API</p>
@@ -130,18 +142,18 @@
         <ul class="footer__list-social">
           <li class="footer__item-social">
             <a class="link footer__link-social" href="https://github.com/xxxKlausxxx" target="_blank">
-              <img src="../../images/github.svg" alt="Github">
+              <img src="<%=require('../../images/github.svg')%>" alt="Github">
             </a>
           </li>
           <li class="footer__item-social">
-            <a class="link footer__link-social" href="#" target="_blank">
-              <img src="../../images/fb.svg" alt="Facebook">
+            <a class="link footer__link-social" href="https://vk.com/id3583896" target="_blank">
+              <img src="<%=require('../../images/fb.svg')%>" alt="Facebook">
             </a>
           </li>
         </ul>
       </div>
     </div>
   </footer>
-  <script src="index.js"></script>
+  <script src="<%= htmlWebpackPlugin.files.js %>"></script>
 </body>
 </html>

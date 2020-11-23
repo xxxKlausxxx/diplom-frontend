@@ -4,18 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta author="einazarov" description="NewsExplorer" >
-  <link rel="News icon" href="../../images/Favicon.svg" type="image/svg">
+  <meta name="author" content="Nazarov Evgeniy">
+  <meta name="description" content="Приложение для поиска новостей">
+  <meta name="keywords" content="поиск новости">
+  <link rel="News icon" href="<%=require('../../images/Favicon.svg')%>" type="image/svg">
   <title>News Explorer | Main</title>
 
-  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>">
 </head>
 <body>
-      <!-- Хедер -->
+      <!-- Хедер --> close.svg
   <header class="header">
     <div class="header__menu">
       <h2 class="header__logo">NewsExplorer</h2>
-      <button class="header__dropout-button"><img class="header__dropout-menu" src="../../images/main_menu.svg" alt="Меню"></button>
+      <button class="header__dropout-button"><img class="header__dropout-menu" src="<%=require('../../images/main_menu.svg')%>" alt="Меню"></button>
       <ul class="header__list header__list_logout header__list_active">
         <li><button class="header__button-mine">Главная</button></li>
         <li><button class="header__button-autorisation">Авторизоваться</button></li>
@@ -23,7 +25,7 @@
       <ul class="header__list header__list_login">
         <li><button class="header__button-mine header__button-mine_login">Главная</button></li>
         <li><button class="header__button-savenews" onclick="location.href='../articles/index.html'">Сохранённые статьи</button></li>
-        <li><button class="header__button-autorisation header__button-autorisation_exit">Грета<img class="header__exit-image"src="../../images/logout.svg" alt="Выход"></button></li>
+        <li><button class="header__button-autorisation header__button-autorisation_exit">Грета<img class="header__exit-image" src="<%=require('../../images/logout.svg')%>" alt="Выход"></button></li>
       </ul>
     </div>
     <div class="header__container">
@@ -36,7 +38,7 @@
     </form>
   </header>
       <!-- Контейнер с карточками -->
-   <section class="cards">
+  <section class="cards">
     <h2 class="title cards__title">Результаты поиска</h2>
     <div class="cards__container">
       <!-- Карточки -->
@@ -107,7 +109,7 @@
   </section>
       <!-- Об авторе -->
   <section class="about-author">
-    <img class="about-author__foto" src="../../images/image-03.jpg" alt="Фото автора">
+    <img class="about-author__foto" src="<%=require('../../images/image-03.jpg')%>" alt="Фото автора">
     <div class="about-author__container">
       <h2 class="about-author__title">Об авторе</h2>
       <p class="about-author__text">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.</p>
@@ -132,12 +134,12 @@
         <ul class="footer__list-social">
           <li class="footer__item-social">
             <a class="link footer__link-social" href="https://github.com/xxxKlausxxx" target="_blank">
-              <img src="../../images/github.svg" alt="Github">
+              <img src="<%=require('../../images/github.svg')%>" alt="Github">
             </a>
           </li>
           <li class="footer__item-social">
-            <a class="link footer__link-social" href="#" target="_blank">
-              <img src="../../images/fb.svg" alt="Facebook">
+            <a class="link footer__link-social" href="https://vk.com/id3583896" target="_blank">
+              <img src="<%=require('../../images/fb.svg')%>" alt="Facebook">
             </a>
           </li>
         </ul>
@@ -147,42 +149,42 @@
       <!-- Попапы -->
   <div class="popup popup__entry">
     <div class="popup__content">
-      <img src="../../images/close.svg" alt="Закрыть" class="popup__close popup__close_entry">
+      <img src="<%=require('../../images/close.svg')%>" alt="Закрыть" class="popup__close popup__close_entry">
       <h3 class="popup__title">Вход</h3>
       <form class="popup__form">
         <h4 class="popup__input_title">Email</h4>
         <input type="text" name="email" class="popup__input popup__input_email" placeholder="Введите почту" required>
-        <span id="error-email" class="error-massage error-massage_hidden"></span>
+        <span id="error-email_entry" class="error-massage error-massage_hidden"></span>
         <h4 class="popup__input_title">Пароль</h4>
         <input type="text" name="password" class="popup__input popup__input_password" placeholder="Введите пароль" required>
-        <span id="error-link" class="error-massage error-massage_hidden"></span>
-        <button id="popup__button" class="popup__button popup__button_entry">Войти</button>
+        <span id="error-password_entry" class="error-massage error-massage_hidden"></span>
+        <button id="popup__button_entry" class="popup__button popup__button_entry">Войти</button>
         <p class="popup__or">или <a href="#" class='popup__or popup__or_registration_link'>Зарегистрироваться</a></p>
       </form>
     </div>
   </div>
   <div class="popup popup__registration">
     <div class="popup__content">
-      <img src="../../images/close.svg" alt="Закрыть" class="popup__close popup__close_registration">
+      <img src="<%=require('../../images/close.svg')%>" alt="Закрыть" class="popup__close popup__close_registration">
       <h3 class="popup__title">Регистрация</h3>
       <form class="popup__form">
         <h4 class="popup__input_title">Email</h4>
         <input type="text" name="email" class="popup__input popup__input_email" placeholder="Введите почту" required>
-        <span id="error-email" class="error-massage error-massage_hidden"></span>
+        <span id="error-email_reg" class="error-massage error-massage_hidden"></span>
         <h4 class="popup__input_title">Пароль</h4>
         <input type="text" name="password" class="popup__input popup__input_password" placeholder="Введите пароль" required>
-        <span id="error-password" class="error-massage error-massage_hidden"></span>
+        <span id="error-password_reg" class="error-massage error-massage_hidden"></span>
         <h4 class="popup__input_title">Имя</h4>
         <input type="text" name="name" class="popup__input popup__input_name" placeholder="Введите имя" required>
         <span id="error-name" class="error-massage error-massage_hidden"></span>
-        <button id="popup__button" class="popup__button popup__button_registration">Зарегистрироваться</button>
-        <p class="popup__or">или <a href="#" class='popup__or popup__or_entry_link'>Войти</a></p>
+        <button id="popup__button_reg" class="popup__button popup__button_registration">Зарегистрироваться</button>
+        <p class="popup__or">или <p class='popup__or popup__or_entry_link'>Войти</p>
       </form>
     </div>
   </div>
   <div class="popup popup__access">
     <div class="popup__content popup__content_access">
-      <img src="../../images/close.svg" alt="Закрыть" class="popup__close popup__close_access">
+      <img src="<%=require('../../images/close.svg')%>" alt="Закрыть" class="popup__close popup__close_access">
       <h3 class="popup__title">Пользователь успешно зарегистрирован!</h3>
       <a href="#" class="popup__access-link">Войти</a>
     </div>
@@ -191,14 +193,13 @@
     <div class="popup__content popup__content_menu">
       <div class="header__menu popup__menu">
         <h2 class="header__logo">NewsExplorer</h2>
-        <button class="header__dropout-button popup__menu-close"><img class="header__dropout-menu" src="../../images/close_menu.svg" alt="Меню">
+        <button class="header__dropout-button popup__menu-close"><img class="header__dropout-menu" src="<%=require('../../images/close_menu.svg')%>" alt="Меню"></button>
       </div>
       <button class="header__button-mine popup__button-mine">Главная</button>
       <button class="header__button-savenews popup__button-savenews" onclick="location.href='../articles/index.html'">Сохранённые статьи</button>
       <button class="popup__button-autorisation header__button-autorisation ">Авторизоваться</button>
     </div>
   </div>
-  <script src="Popup.js"></script>
-  <script src="index.js"></script>
+  <script src="<%= htmlWebpackPlugin.files.js %>"></script>
 </body>
 </html>

@@ -1,0 +1,9 @@
+.header__list_login {
+  justify-content: end;
+}
+
+@media(max-width: 600px) {
+  .header__list_login {
+    width: 67%;
+  }
+}

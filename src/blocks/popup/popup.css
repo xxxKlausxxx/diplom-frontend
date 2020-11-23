@@ -6,7 +6,7 @@
 @import url('./__button/popup__button.css');
 @import url('./__or/popup__or.css');
 @import url('./__is-opened/popup__is-opened.css');
-@import url('./__access/popup__access.css');
+/* @import url('./__access/popup__access.css'); */
 @import url('./__access-link/popup__access-link.css');
 @import url('./__content_access/popup__content_access.css');
 @import url('./__content_menu/popup__content_menu.css');
@@ -14,6 +14,8 @@
 @import url('./__button-mine/popup__button-mine.css');
 @import url('./__button-savenews/popup__button-savenews.css');
 @import url('./__button-autorisation/popup__button-autorisation.css');
+@import url('./__content_article/popup__content_article.css');
+@import url('./__menu_article/popup__menu_article.css');
 
 .popup {
   position: fixed;
