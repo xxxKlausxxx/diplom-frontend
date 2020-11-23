@@ -1,0 +1,57 @@
+.header__button-search {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 100px;
+  border: none;
+  line-height: 24px;
+  position: relative;
+  right: 96px;
+  min-height: 64px;
+  color: white;
+  background-color: #2F71E5;
+  width: 160px;
+  padding-left: 50px;
+  padding-right: 50px;
+  top: 1px;
+}
+
+.header__button-search:hover {
+  cursor: url('../../../images/Pointer.png'), pointer;
+  background-color: #347EFF;
+}
+
+.header__button-search:focus {
+  cursor: url('../../../images/Pointer.png'), pointer;
+  outline: none !important;
+  background-color: #2A65CC;
+}
+
+@media (min-width: 1440px) and (max-width: 120000px) {
+  .header__button-search {
+    width: 168px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header__button-search {
+    right: 16%;
+    min-height: 56px;
+  }
+}
+
+@media (max-width: 697px) {
+  .header__button-search {
+    position: static;
+    width: 56%;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 424px) {
+  .header__button-search {
+    width: 85%;
+  }
+}

@@ -1,0 +1,45 @@
+.title {
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.header__title{
+  font-size: 3.75rem;
+  line-height: 1;
+  color: white;
+  width: 42%;
+  margin-top: 80px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: left;
+}
+
+.header__title_articles {
+  font-size: 2.5rem;
+  line-height: 1;
+  color: #1A1B22;
+  margin-left: 7%;
+  margin-top: 2%;
+  width: 30%;
+}
+
+@media (max-width: 1024px) {
+  .header__title {
+    font-size: 2.25rem;
+    line-height: 1;
+    margin-left: 21%;
+    margin-top: 40px;
+  }
+  .header__title_articles {
+    margin-left: 7%;
+  }
+}
+
+@media (max-width: 424px) {
+  .header__title {
+    margin-left: 7%;
+    margin-top: 20px;
+    width: fit-content;
+  }
+}

@@ -1,0 +1,28 @@
+@import url('./__image/card__image.css');
+@import url('./__save/card__save.css');
+@import url('./__button/card__button.css');
+@import url('./__date/card__date.css');
+@import url('./__text/card__text.css');
+@import url('./__title/card__title.css');
+@import url('./__site/card__site.css');
+@import url('./__container/card__container.css');
+@import url('./__auth-title/card__auth-title.css');
+@import url('./__delete/card__delete.css');
+@import url('./__image-container/card__image-container.css');
+
+.card {
+  min-height: 576px;
+  border-radius: 15px;
+  background-color: white;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .card {
+    min-height: 420px;
+  }
+}
+@media (min-width: 550px) and (max-width: 600px) {
+  .card {
+    min-height: 420px;
+  }
+}

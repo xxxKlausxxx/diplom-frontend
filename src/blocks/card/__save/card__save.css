@@ -1,0 +1,18 @@
+.card__save{
+  margin: 6% 6% auto 1%;
+  width: 40px;
+  height: 40px;
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .card__save {
+    margin: 3% 3% auto 1%
+  }
+}
+
+@media (min-width: 550px) and (max-width: 600px) {
+  .card__save {
+    margin: 3% 3% auto 1%
+  }
+}

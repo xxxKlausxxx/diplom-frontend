@@ -1,0 +1,37 @@
+.header__subtitle{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: white;
+  width: 40%;
+  margin-top: 32px;
+  margin-right: auto;
+  margin-left: 29%;
+  text-align: left;
+}
+
+.header__subtitle_articles {
+  color: rgba(26, 27, 34, 0.5);
+  margin-left: 7%;
+}
+
+@media (max-width: 1024px) {
+  .header__subtitle {
+    font-size: 1.125rem;
+    line-height: 1.3;
+    width: 54%;
+    margin-left: 21%;
+  }
+  .header__subtitle_articles {
+    margin-left: 7%;
+  }
+}
+
+@media (max-width: 424px) {
+  .header__subtitle {
+    margin: 7%;
+    width: fit-content;
+  }
+}

@@ -1,0 +1,22 @@
+.popup__button{
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #B6BCBF;
+  display: block;
+  align-items: center;
+  margin: 10% auto 0 auto;
+  background-color: #E6E8EB;
+  border: 0;
+  border-radius: 100px;
+  width: 80%;
+  text-align: center;
+  height: 65px;
+}
+.popup__button:hover {
+  background: #2F71E5;
+  color: #FFFFFF;
+  cursor: url('../../../images/Pointer.png'), pointer;
+}

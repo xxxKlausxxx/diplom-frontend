@@ -1,0 +1,7 @@
+.header__button-autorisation_exit {
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5% 14% 7% 17% !important;
+}

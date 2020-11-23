@@ -1,0 +1,22 @@
+.footer__nav {
+  width: 69%;
+}
+
+@media (max-width: 1024px) {
+  .footer__nav {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer__nav {
+    width: 80%
+  }
+}
+
+@media (max-width: 475px) {
+  .footer__nav {
+    flex-direction: column;
+  }
+}

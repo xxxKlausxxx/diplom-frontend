@@ -1,0 +1,6 @@
+.popup__content_access {
+  min-height: 182px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

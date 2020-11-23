@@ -1,0 +1,52 @@
+.card__image {
+  background-size: cover;
+  background-position: center;
+  height: 272px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.card__image-articles {
+  background-size: cover;
+  background-position: center;
+  height: 272px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.card__image_one {
+  background-image: url('../../../images/card_image_1.jpg');
+}
+.card__image_two {
+  background-image: url('../../../images/card_image_2.jpg');
+}
+.card__image_three {
+  background-image: url('../../../images/card_image_3.jpg');
+}
+.card__image-articles_four {
+  background-image: url('../../../images/card_image_4.jpg');
+}
+.card__image-articles_five {
+  background-image: url('../../../images/card_image_5.jpg');
+}
+.card__image-articles_six {
+  background-image: url('../../../images/card_image_6.jpg');
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .card__image {
+    height: 150px;
+  }
+}
+
+@media (min-width: 550px) and (max-width: 600px) {
+  .card__image {
+    height: 150px;
+  }
+}

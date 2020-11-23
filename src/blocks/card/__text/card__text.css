@@ -1,0 +1,24 @@
+.card__text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.375;
+  margin: 16px auto 18px 6%;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .card__text {
+    height: 88px;
+    overflow: hidden;
+  }
+}
+@media (min-width: 550px) and (max-width: 600px) {
+  .card__text {
+    height: 88px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}

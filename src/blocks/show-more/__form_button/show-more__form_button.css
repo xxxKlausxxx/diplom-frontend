@@ -1,0 +1,20 @@
+.show-more__form_button {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  border-radius: 100px;
+  outline: none;
+  background-color: white;
+  color: black;
+  height: 64px;
+  width: 288px;
+  margin-top: 15%;
+  border: none;
+}
+.show-more__form_button:hover {
+  background-color: #E6E8EB;
+  color: #1A1B22;
+  cursor: url('../../../images/Pointer.png'), pointer;
+}
