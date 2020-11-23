@@ -1,6 +1,6 @@
 # Практика JavaScript.
 ## ver.1.0.1 
-Ссылка на проеккт https://xxxklausxxx.github.io/project9/
+Ссылка на проеккт https://xxxklausxxx.github.io/diplom-frontend/
 ## Инструкции
 1. Клонировать репозиторий.
 2. Установить Node +NPM.
