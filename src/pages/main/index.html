@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>">
 </head>
 <body>
-      <!-- Хедер --> close.svg
+      <!-- Хедер -->
   <header class="header">
     <div class="header__menu">
       <h2 class="header__logo">NewsExplorer</h2>
@@ -24,7 +24,7 @@
       </ul>
       <ul class="header__list header__list_login">
         <li><button class="header__button-mine header__button-mine_login">Главная</button></li>
-        <li><button class="header__button-savenews" onclick="location.href='../articles/index.html'">Сохранённые статьи</button></li>
+        <li><button class="header__button-savenews" onclick="location.href='./articles.html'">Сохранённые статьи</button></li>
         <li><button class="header__button-autorisation header__button-autorisation_exit">Грета<img class="header__exit-image" src="<%=require('../../images/logout.svg')%>" alt="Выход"></button></li>
       </ul>
     </div>
@@ -43,7 +43,7 @@
     <div class="cards__container">
       <!-- Карточки -->
       <div class="card">
-      <div class="card__image" style="background: url(../../images/card_image_1.jpg); background-size: cover;">
+      <div class="card__image card__image_one" >
         <div class="card__auth-title card__auth-title_active">Войдите, чтобы сохранять статьи</div>
         <form class="card__save" action="#">
           <button class="card__button"></button>
@@ -58,7 +58,7 @@
         </div>
       </div>
       <div class="card">
-        <div class="card__image" style="background: url(../../images/card_image_2.jpg); background-size: cover;">
+        <div class="card__image card__image_two">
           <div class="card__auth-title">Войдите, чтобы сохранять статьи</div>
           <form class="card__save" action="#">
             <button class="card__button"></button>
@@ -73,7 +73,7 @@
         </div>
       </div>
       <div class="card">
-        <div class="card__image" style="background: url(../../images/card_image_3.jpg); background-size: cover;">
+        <div class="card__image card__image_three">
           <div class="card__auth-title">Войдите, чтобы сохранять статьи</div>
           <form class="card__save" action="#">
             <button class="card__button"></button>
@@ -196,7 +196,7 @@
         <button class="header__dropout-button popup__menu-close"><img class="header__dropout-menu" src="<%=require('../../images/close_menu.svg')%>" alt="Меню"></button>
       </div>
       <button class="header__button-mine popup__button-mine">Главная</button>
-      <button class="header__button-savenews popup__button-savenews" onclick="location.href='../articles/index.html'">Сохранённые статьи</button>
+      <button class="header__button-savenews popup__button-savenews" onclick="location.href='./articles.html'">Сохранённые статьи</button>
       <button class="popup__button-autorisation header__button-autorisation ">Авторизоваться</button>
     </div>
   </div>

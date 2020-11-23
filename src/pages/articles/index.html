@@ -13,9 +13,9 @@
   <header class="header header__articles">
     <div class="header__menu header__menu_articles">
       <h2 class="header__logo header__logo_articles">NewsExplorer</h2>
-      <button class="header__dropout-button"><img class="header__dropout-menu" src="../../images/main-menu-dark.svg" alt="Меню"></button>
+      <button class="header__dropout-button"><img class="header__dropout-menu" src="<%=require('../../images/main-menu-dark.svg')%>"></button>
       <ul class="header__list header__list_login header__list_active">
-        <li><button class="header__button-mine header__button-mine_articles" onclick="location.href='../../pages/main/index.html'">Главная</button></li>
+        <li><button class="header__button-mine header__button-mine_articles" onclick="location.href='./index.html'">Главная</button></li>
         <li><button class="header__button-savenews header__button-savenews_articles">Сохранённые статьи</button></li>
         <li><button class="header__button-autorisation header__button-autorisation_exit header__button-autorization_articles" onclick="location.href='../../pages/main/index.html'">Грета<img class="header__exit-image" src="<%=require('../../images/logout-dark.svg')%>" alt="Выход"></button></li>
       </ul>
@@ -31,7 +31,7 @@
     <div class="cards__container">
       <!-- Карточки -->
       <div class="card">
-      <div class="card__image-articles" style="background: url(../../images/card_image_4.jpg); background-size: cover;">
+      <div class="card__image-articles card__image-articles_four">
         <div class="card__auth-title card__auth-tittle_keyword">Природа</div>
         <div class="card__image-container">
           <div class="card__auth-title card__auth-title_delete">Убрать из сохранённых</div>
@@ -47,7 +47,7 @@
         </div>
       </div>
       <div class="card">
-        <div class="card__image-articles" style="background: url(../../images/card_image_5.jpg); background-size: cover;">
+        <div class="card__image-articles card__image-articles_five">
           <div class="card__auth-title card__auth-tittle_keyword">Природа</div>
           <div class="card__image-container">
             <div class="card__auth-title card__auth-title_delete">Убрать из сохранённых</div>
@@ -63,7 +63,7 @@
         </div>
       </div>
       <div class="card">
-        <div class="card__image-articles" style="background: url(../../images/card_image_6.jpg); background-size: cover;">
+        <div class="card__image-articles card__image-articles_six">
           <div class="card__auth-title card__auth-tittle_keyword">Тайга</div>
           <div class="card__image-container">
             <div class="card__auth-title card__auth-title_delete">Убрать из сохранённых</div>
@@ -79,7 +79,7 @@
         </div>
       </div>
       <div class="card">
-        <div class="card__image-articles" style="background: url(../../images/card_image_4.jpg); background-size: cover;">
+        <div class="card__image-articles card__image-articles_four">
           <div class="card__auth-title card__auth-tittle_keyword">Парки</div>
           <div class="card__image-container">
             <div class="card__auth-title card__auth-title_delete">Убрать из сохранённых</div>
@@ -95,7 +95,7 @@
         </div>
       </div>
       <div class="card">
-        <div class="card__image-articles" style="background: url(../../images/card_image_5.jpg); background-size: cover;">
+        <div class="card__image-articles card__image-articles_five">
           <div class="card__auth-title card__auth-tittle_keyword">Фотография</div>
           <div class="card__image-container">
             <div class="card__auth-title card__auth-title_delete">Убрать из сохранённых</div>
@@ -119,9 +119,9 @@
         <h2 class="header__logo header__logo_articles">NewsExplorer</h2>
         <button class="header__dropout-button popup__menu-close header__dropout-menu_article"><img class="header__dropout-menu" src="<%=require('../../images/close_menu_dark.svg')%>" alt="Меню"></button>
       </div>
-      <button class="header__button-mine popup__button-mine header__button-mine_articles" onclick="location.href='../../pages/main/index.html'">Главная</button>
-      <button class="header__button-savenews popup__button-savenews header__button-savenews_articles" onclick="location.href='../articles/index.html'">Сохранённые статьи</button>
-      <button class="popup__button-autorisation header__button-autorisation header__button-autorisation_exit header__button-autorization_articles" onclick="location.href='../../pages/main/index.html'">Грета<img class="header__exit-image" src="../../images/logout-dark.svg" alt="Выход"></button>
+      <button class="header__button-mine popup__button-mine header__button-mine_articles" onclick="location.href='./index.html'">Главная</button>
+      <button class="header__button-savenews popup__button-savenews header__button-savenews_articles" onclick="location.href='./articles.html'">Сохранённые статьи</button>
+      <button class="popup__button-autorisation header__button-autorisation header__button-autorisation_exit header__button-autorization_articles" onclick="location.href='./index.html'">Грета<img class="header__exit-image" src="<%=require('../../images/logout-dark.svg')%>" alt="Выход"></button>
     </div>
   </div>
   <!-- Футер -->
@@ -131,7 +131,7 @@
       <nav class="footer__nav">
         <ul class="footer__list">
           <li class="footer__item">
-            <a class="link footer__link" href="../../pages/main/index.html">Главная</a>
+            <a class="link footer__link" href="./index.html">Главная</a>
           </li>
           <li class="footer__item">
             <a class="link footer__link" href="https://praktikum.yandex.ru/" target="_blank">Яндекс.Практикум</a>
