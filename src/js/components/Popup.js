@@ -1,8 +1,8 @@
 import BaseComponent from './BaseComponent'
 
 export default class Popup extends BaseComponent{
-  constructor(popup) {
-    this.popup = popup;
+  constructor(options) {
+    this.options = options;
   }
 
   setContent(message) {
