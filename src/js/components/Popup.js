@@ -1,15 +1,21 @@
-export default class Popup {
+import BaseComponent from './BaseComponent'
+
+export default class Popup extends BaseComponent{
   constructor(popup) {
     this.popup = popup;
   }
 
-  // Открытие попапа
+  setContent(message) {
+
+  }
+
+  clearContent() {
+
+  }
 
   open() {
     this.popup.classList.add('popup_is-opened');
   }
-
-  // Закрытие попапа
 
   close() {
     this.popup.classList.remove('popup_is-opened');
