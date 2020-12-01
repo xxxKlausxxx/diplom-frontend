@@ -4,7 +4,6 @@ export default class PopupEntry extends Popup {
     constructor(options, popupReg) {
         super(options);
         this.popupReg = popupReg;
-
     }
 
 
