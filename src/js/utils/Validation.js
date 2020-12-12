@@ -8,12 +8,18 @@ export default class Validation {
             return false;
         }
     }
-    otherValidation(input) {
-        if (input.length === 0) {
-            return false
+    passwordValidation(input) {
+        if (input.length < 8) {
+            return false;
         } else {
-            return true
-            
+            return true;
+        }
+    }
+    otherValidation(input) {
+        if (input.value === 0) {
+            return false;
+        } else {
+            return true;       
         }
     }
 

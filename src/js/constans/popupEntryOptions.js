@@ -1,9 +1,10 @@
+const popupEntry = document.querySelector('.popup__entry');
 const POPUP_ENTRY_OPTIONS = {
-    container: document.querySelector('.popup__entry'),
+    container: popupEntry,
     elements: {
         closeButton: document.querySelector('.popup__close_entry'),
         popupOr: document.querySelector('.popup__or_registration_link'),
-        form: document.querySelector('.popup__form'),
+        form: popupEntry.querySelector('.popup__form'),
     }
 }
 

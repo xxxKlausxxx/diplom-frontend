@@ -1,0 +1,1 @@
+export const notFound = document.querySelector('.not-found');

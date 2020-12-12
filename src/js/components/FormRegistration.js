@@ -1,90 +1,38 @@
 export default class FormRegistration {
-  constructor(form, validation) {
-    this.form = form;
-    this.validation = validation;
-    this.setEventListeners();
-  }
+    constructor(form, popupReg, mainApi, popupAccess) {
+        this.form = form;
+        this.mainApi = mainApi;
+        this.popupReg = popupReg;
+        this.popupAccess = popupAccess;
+        this._signup = this._signup.bind(this);
 
-  setEventListeners() {
-    const inputEmail = this.form.querySelector('.popup__input_email');
-    const inputName = this.form.querySelector('.popup__input_name');
-    const inputPassword = this.form.querySelector('.popup__input_password');
-    let isValidForm = true;
-
-    inputEmail.addEventListener('input', () => {
-      this.emailValidity(inputEmail);
-    });
-    inputName.addEventListener('input', () => {
-      this.nameValidity(inputName);
-    });
-    inputPassword.addEventListener('input', () => {
-      this.passwordValidity(inputPassword);
-    });
-  }
-
-  nameValidity(elem) {
-    const error = elem.nextElementSibling;
-    if(!this.validation.otherValidation(elem.value)) {
-      this.activateError(elem);
-      error.textContent = 'Это поле обязательно для заполнения';
-      return false;
-    }
-    this.resetError(elem)
-    return true;
-  }
-
-  passwordValidity(elem) {
-    const error = elem.nextElementSibling;
-    if(!this.validation.otherValidation(elem.value)) {
-      this.activateError(elem);
-      error.textContent = 'Это поле обязательно для заполнения';
-      return false;
-    }
-    this.resetError(elem)
-    return true
-  }
-
-  emailValidity(elem) {
-    const error = elem.nextElementSibling;
-    const errorMesseges = {
-      valueMissing: 'Это поле обязательно для заполнения',
-      validateError: 'Некорректный Email'
+        this.setEventListeners()
     }
 
-    if(!this.validation.otherValidation(elem)) {
-      this.activateError(elem.value);
-      error.textContent = errorMesseges.valueMissing;
-      return false;
+    _signup(email, password, name) {
+        if(this.form.querySelector('.popup__button').classList.contains('popup__button_active')){
+        email = this.form.querySelector('.popup__input_email').value;
+        name = this.form.querySelector('.popup__input_name').value;
+        password = this.form.querySelector('.popup__input_password').value;
+        this.mainApi.signup(email, password, name)
+        .then(res => {
+            console.log(res)
+                this.popupReg.close();
+                this.popupAccess.open();     
+        })
+        .catch(err => {
+            this._setServerError(err)
+        })
+        }
     }
-    if(!this.validation.emailValidation(elem)) {
-      this.activateError(elem);
-      error.textContent = errorMesseges.validateError;
-      return false;
-    }
-    else {
-      this.resetError(elem)
-      return true
-    }
-  }
 
-  activateError(elem) {
-    elem.nextElementSibling.classList.remove('error-massage_hidden');
-    elem.setAttribute("style", "margin-bottom:0;");
-  }
-
-  resetError(elem) {
-    elem.removeAttribute("style");
-    elem.nextElementSibling.textContent = "";
-    elem.nextElementSibling.classList.add("error-massage_hidden");
-    console.log('Working');
-  }
-
-  setSubmitButtonState(isValidForm) {
-    const button = this.form.querySelector("button");
-    if (isValidForm) {
-      button.classList.add('popup__button_active');
-    } else {
-      button.classList.remove('popup__button_active');
+    _setServerError(err) {
+        const error = this.form.querySelector('.popup__server-error');
+        error.classList.remove('popup__server-error_hidden');     
+        error.textContent = `${err}`;
     }
-  }
+
+    setEventListeners() {
+        this.form.querySelector('.popup__button').addEventListener("click", this._signup)
+    }
 }

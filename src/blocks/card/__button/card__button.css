@@ -1,4 +1,4 @@
-.card__button {
+.card__button_save {
   background: url('../../../images/bookmark.svg');
   background-repeat: no-repeat;
   background-position: center;
@@ -7,9 +7,32 @@
   height: 40px;
   border: 0;
   border-radius: 8px;
+  display: none;
 }
 
-.card__button:hover {
+.card__button_save:focus {
+  outline: none;
+}
+
+.card__button_delete {
+  background: url('../../../images/bookmark_marked.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #FFFFFF;
+  outline: none;
+  cursor: url('../../../images/Pointer.png'), pointer;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  border-radius: 8px;
+  display: none;
+}
+
+.card__button_delete:focus {
+  outline: none;
+}
+
+.card__button_save:hover {
   background: url('../../../images/bookmark_hover.svg');
   background-repeat: no-repeat;
   background-position: center;
@@ -17,11 +40,6 @@
   cursor: url('../../../images/Pointer.png'), pointer;
 }
 
-.card__button:focus {
-  background: url('../../../images/bookmark_marked.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #FFFFFF;
-  outline: none;
-  cursor: url('../../../images/Pointer.png'), pointer;
+.card__button_active {
+  display: block;
 }

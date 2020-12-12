@@ -1,12 +1,7 @@
 export default class Popup {
   constructor(options) {
     this.options = options;
-
     this.setHandlers();
-  }
-
-  setContent(message) {
-
   }
 
   clearContent() {
@@ -18,27 +13,30 @@ export default class Popup {
     spansArr.forEach(elem => {
       elem.classList.add("error-massage_hidden");
     });
-  inputsArr.forEach(elem => {
+    inputsArr.forEach(elem => {
       elem.removeAttribute("style");
     });
-  buttonsArr.forEach(elem => {
+    buttonsArr.forEach(elem => {
       elem.classList.remove('popup__button_active');
     });
   }
 
+
   open() {
     this.options.container.classList.add('popup_is-opened');
+    if (!this.options.container.classList.contains('popup__access')){
+    this.clearContent()}
   }
 
   close() {
     this.options.container.classList.remove('popup_is-opened');
-    this.clearContent()
+    if (!this.options.container.classList.contains('popup__access')){
+    this.clearContent()}
   }
 
   setHandlers() { 
     this.options.elements.closeButton.addEventListener('click', () => {
       this.close()
-      this.clearContent()
     });
     this.options.container.addEventListener('click', (event) =>{
       if (event.target.classList.contains('popup')) {

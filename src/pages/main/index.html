@@ -33,16 +33,17 @@
       <h3 class="subtitle header__subtitle">Находите самые свежие статьи на любую тему и сохраняйте в своём личном кабинете.</h3>
     </div>
     <form class="header__container header__container_search" action="#">
-      <input type="search" class="header__search" placeholder="Введите тему новости">
+      <input type="search" class="header__search" placeholder="Введите тему новости">   
       <button class="header__button-search">Искать</button>
     </form>
+    <span id="error-search" class="error-massage error-massage_hidden"></span>
   </header>
       <!-- Контейнер с карточками -->
   <section class="cards">
     <h2 class="title cards__title">Результаты поиска</h2>
     <div class="cards__container">
       <!-- Карточки -->
-      <div class="card">
+      <!-- <div class="card">
       <div class="card__image card__image_one" >
         <div class="card__auth-title card__auth-title_active">Войдите, чтобы сохранять статьи</div>
         <form class="card__save" action="#">
@@ -86,7 +87,7 @@
             В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
           <p class="card__site">РИА</p>
         </div>
-      </div>
+      </div> -->
     </div>
   </section>
       <!-- Показать еще -->
@@ -151,15 +152,16 @@
     <div class="popup__content">
       <img src="<%=require('../../images/close.svg')%>" alt="Закрыть" class="popup__close popup__close_entry">
       <h3 class="popup__title">Вход</h3>
-      <form class="popup__form">
+      <form class="popup__form popup__form_entry">
         <h4 class="popup__input_title">Email</h4>
         <input type="text" name="email" class="popup__input popup__input_email" placeholder="Введите почту" required>
         <span id="error-email_entry" class="error-massage error-massage_hidden"></span>
         <h4 class="popup__input_title">Пароль</h4>
         <input type="text" name="password" class="popup__input popup__input_password" placeholder="Введите пароль" required>
         <span id="error-password_entry" class="error-massage error-massage_hidden"></span>
+        <span class="popup__server-error popup__server-error_hidden"></span>
         <button id="popup__button_entry" class="popup__button popup__button_entry">Войти</button>
-        <p class="popup__or">или <p class='popup__or popup__or_registration_link'>Зарегистрироваться</p></p>
+        <p class="popup__or">или <p class='popup__or popup__or_link popup__or_registration_link'>Зарегистрироваться</p></p>
       </form>
     </div>
   </div>
@@ -167,7 +169,7 @@
     <div class="popup__content">
       <img src="<%=require('../../images/close.svg')%>" alt="Закрыть" class="popup__close popup__close_registration">
       <h3 class="popup__title">Регистрация</h3>
-      <form class="popup__form">
+      <form class="popup__form popup__form_registration" type="submit" method="POST" novalidate>
         <h4 class="popup__input_title">Email</h4>
         <input type="text" name="email" class="popup__input popup__input_email" placeholder="Введите почту" required>
         <span id="error-email_reg" class="error-massage error-massage_hidden"></span>
@@ -177,8 +179,9 @@
         <h4 class="popup__input_title">Имя</h4>
         <input type="text" name="name" class="popup__input popup__input_name" placeholder="Введите имя" required>
         <span id="error-name" class="error-massage error-massage_hidden"></span>
+        <span class="popup__server-error popup__server-error_hidden"></span>
         <button id="popup__button_reg" class="popup__button popup__button_registration">Зарегистрироваться</button>
-        <p class="popup__or">или <p class='popup__or popup__or_entry_link'>Войти</p>
+        <p class="popup__or">или <p class='popup__or popup__or_link popup__or_entry_link'>Войти</p>
       </form>
     </div>
   </div>
@@ -186,7 +189,7 @@
     <div class="popup__content popup__content_access">
       <img src="<%=require('../../images/close.svg')%>" alt="Закрыть" class="popup__close popup__close_access">
       <h3 class="popup__title">Пользователь успешно зарегистрирован!</h3>
-      <a href="#" class="popup__access-link">Войти</a>
+      <p class="popup__access-link popup__or_link">Войти</p>
     </div>
   </div>
   <div class="popup popup__menu" >

@@ -8,8 +8,9 @@ export default class PopupEntry extends Popup {
 
 
     setHandlers() {
-        this.options.elements.popupOr.addEventListener('click', (event) => {
+        this.options.elements.popupOr.addEventListener('click', () => {
             super.close();
+            super.clearContent()
             this.popupReg.open();
         })
     }

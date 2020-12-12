@@ -29,6 +29,10 @@
   margin-bottom: 48px;
 }
 
+.header__search_error, textarea {
+  color: red !important
+}
+
 @media (min-width: 1440px) and (max-width: 120000px) {
   .header__search {
     width: 608px;

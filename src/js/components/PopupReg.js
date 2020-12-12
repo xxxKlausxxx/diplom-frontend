@@ -10,6 +10,7 @@ export default class PopupReg extends Popup {
     setHandlers() {
         this.options.elements.popupOr.addEventListener('click', (event) => {
             super.close();
+            super.clearContent();
             this.popupEntry.open();
         })
     }

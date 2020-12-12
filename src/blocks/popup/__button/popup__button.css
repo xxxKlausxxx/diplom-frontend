@@ -15,8 +15,12 @@
   text-align: center;
   height: 65px;
 }
-.popup__button:hover {
+.popup__button_active {
   background: #2F71E5;
   color: #FFFFFF;
   cursor: url('../../../images/Pointer.png'), pointer;
+}
+
+.error-massage_hidden {
+  display: none;
 }
