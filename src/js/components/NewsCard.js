@@ -4,9 +4,7 @@ export default class NewsCard {
   constructor(header, mainApi) {
     this.header = header;
     this.mainApi = mainApi;
-    this.articles = this.getArticles()
     this.create = this.create.bind(this)
-
   }
 
   create(keyword, title, text, date, source, link, image, _id) {
@@ -23,11 +21,6 @@ export default class NewsCard {
     const cardAuthTitle = document.createElement('div');
     cardAuthTitle.classList.add('card__auth-title');    
     cardAuthTitle.textContent = 'Войдите, чтобы сохранять статьи';
-
-    const cardKeyword = document.createElement('div');
-    cardKeyword.classList.add('card__auth-title');
-    cardKeyword.classList.add('card__auth-tittle_keyword');
-    cardKeyword.textContent = `${keyword}`;
 
     const cardSave = document.createElement('form');
     cardSave.classList.add('card__save');
@@ -63,7 +56,6 @@ export default class NewsCard {
     card.appendChild(cardImage);
     card.appendChild(cardContainer);
     cardImage.appendChild(cardAuthTitle);
-    cardImage.appendChild(cardKeyword);
     cardImage.appendChild(cardSave);
     cardSave.appendChild(cardButtonSave);
     cardSave.appendChild(cardButtonDelete);
@@ -109,22 +101,18 @@ export default class NewsCard {
   }
 
   cardRemove(link, buttonSave, buttonDelete) {
-    const element = this.articles.find((article) => {
+    this.mainApi.getArticles()
+    .then(res => {
+    const element = res.find((article) => {
       if(article.link === link)
        return true;
      });
     this.mainApi.removeArticle(element._id)
     .then(res => {
       this.removeIcon(buttonSave, buttonDelete)
-      this.getArticles();
+      
     });
-  }
-
-  getArticles() {
-    this.mainApi.getArticles()
-    .then(res => {
-      this.articles = res;
-    })
+  })
   }
 
   renderAuthTitle(title, icon) {
@@ -150,7 +138,7 @@ export default class NewsCard {
   setEventListeners(buttonSave, buttonDelete, keyword, title, text, date, source, link, image, id) {
     if(this.header.elements.headerLogin.classList.contains('header__list_active')) {
         buttonSave.addEventListener('click', () => {this.cardSave(buttonSave, buttonDelete, keyword, title, text, date, source, link, image, id);
-        buttonDelete.addEventListener('click', () => {this.cardRemove(link, buttonSave, buttonDelete)})
+          buttonDelete.addEventListener('click', () => {this.cardRemove(link, buttonSave, buttonDelete)})
     })    
   }
   }

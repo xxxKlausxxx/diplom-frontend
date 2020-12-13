@@ -17,20 +17,23 @@
       <ul class="header__list header__list_login header__list_active">
         <li><button class="header__button-mine header__button-mine_articles" onclick="location.href='./index.html'">Главная</button></li>
         <li><button class="header__button-savenews header__button-savenews_articles">Сохранённые статьи</button></li>
-        <li><button class="header__button-autorisation header__button-autorisation_exit header__button-autorization_articles" onclick="location.href='../../pages/main/index.html'">Грета<img class="header__exit-image" src="<%=require('../../images/logout-dark.svg')%>" alt="Выход"></button></li>
+        <li><button class="header__button-autorisation header__button-autorisation_exit header__button-autorization_articles"><img class="header__exit-image" src="<%=require('../../images/logout-dark.svg')%>" alt="Выход"></button></li>
       </ul>
     </div>
     <div class="header__articles-container">
       <p class="header__subtitle header__subtitle_articles">Сохранённые статьи</p>
-      <h2 class="title header__title header__title_articles">Грета, у вас 5 сохранённых статей</h2>
-      <p class="header__keywords">По ключевым словам: <b>Природа</b>, <b>Тайга</b> и <b>2-м другим</b></p>
+      <h2 class="title header__title header__title_articles"><p class="header__title_name"></p>, у вас <p class="header__title_quantity"></p> сохранённых статей</h2>
+      <p class="header__keywords header__keyword_one">По ключевому слову <b class="first__keyword_one"></b></p>
+      <p class="header__keywords header__keywords_two">По ключевым словам: <b class="first__keyword_two"></b> и <b class="second__keyword_two"></b></p>
+      <p class="header__keywords header__keywords_three">По ключевым словам: <b class="first__keyword_three"></b>, <b class="second__keyword_three"></b> и <b class="third__keyword_thre"></b></p>
+      <p class="header__keywords header__keywords_more">По ключевым словам: <b class="first__keyword_more"></b>, <b class="second__keyword_more"></b> и <b class="other__keywords"></b> другим.</p>
     </div>
   </header>
   <!-- Карты -->
-  <section class="cards cards__active cards__articles">
+  <section class="cards cards__articles">
     <div class="cards__container">
       <!-- Карточки -->
-      <div class="card">
+      <!-- <div class="card">
       <div class="card__image-articles card__image-articles_four">
         <div class="card__auth-title card__auth-tittle_keyword">Природа</div>
         <div class="card__image-container">
@@ -110,7 +113,7 @@
           <p class="card__site">АФИША</p>
         </div>
       </div>
-    </div>
+    </div> -->
   </section>
   <!-- Открытие меню -->
   <div class="popup popup__menu" >

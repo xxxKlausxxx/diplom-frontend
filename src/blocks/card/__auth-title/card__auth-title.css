@@ -21,8 +21,8 @@
   width: auto;
   padding-left: 3%;
   padding-right: 3%;
-  display: none !important;
   margin-left: 6%;
+  display: flex !important;
 }
 
 .card__auth-title_delete {

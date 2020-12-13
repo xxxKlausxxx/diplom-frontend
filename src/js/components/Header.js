@@ -2,6 +2,7 @@ export default class Header {
   constructor(options, popup) {
     this.options = options;
     this.popup = popup;
+    this.render = this.render.bind(this)
 
     this.setHandlers()
   }
@@ -23,6 +24,12 @@ export default class Header {
     }
   }
 
+  logout() {
+    localStorage.removeItem('token');
+    localStorage.removeItem('name');
+    window.location.href = "./index.html";
+  }
+
   renderError() {
     const error = this.options.elements.headerError;
     error.classList.remove('error-massage_hidden');
@@ -30,10 +37,12 @@ export default class Header {
   }
 
   setHandlers(){
-    const header = this.options
+    const header = this.options;
+    const exitButton = this.options.elements.exitButton;
     header.elements.headerBtnAuth.addEventListener('click', () => {
       this.popup.open();
     })
+    exitButton.addEventListener('click', () => {this.logout()})
   }
 
 }
