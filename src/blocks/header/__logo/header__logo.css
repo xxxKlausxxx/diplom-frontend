@@ -1,0 +1,20 @@
+.header__logo {
+  font-family: 'Roboto Slab';
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 24px;
+  color: white;
+  margin-top: 23px;
+}
+
+.header__logo_articles {
+  color: #1A1B22;
+}
+
+@media (max-width: 500px) {
+  .header__logo {
+    position: relative;
+    z-index: 2;
+  }
+}

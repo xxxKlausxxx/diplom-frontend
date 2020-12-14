@@ -1,0 +1,7 @@
+.popup__or_link {
+    color: rgb(66, 66, 243)
+}
+
+.popup__or_link:hover {
+    cursor: url('../../../../images/Pointer.png'), pointer;
+  }

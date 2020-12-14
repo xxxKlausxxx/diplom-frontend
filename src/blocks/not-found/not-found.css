@@ -1,0 +1,18 @@
+@import url("../not-found/__image/not-found__image.css");
+@import url("../not-found/__title/not-found__title.css");
+@import url("../not-found/__text/not-found__text.css");
+
+.not-found {
+  max-width: 1440px;
+  width: 100%;
+  margin: auto;
+  background-color: #F5F6F7;
+  min-height: 374px;
+  text-align: center;
+  align-items: center;
+  display: none;
+}
+
+.not-found__active {
+  display: block !important;
+}

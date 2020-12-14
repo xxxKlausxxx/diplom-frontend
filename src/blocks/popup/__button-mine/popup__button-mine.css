@@ -1,0 +1,9 @@
+.popup__button-mine {
+    font-size: 18px !important;
+    line-height: 56px !important;
+    border: 0 !important;
+    padding: 0 !important;
+    text-align: start;
+    width: 100%;
+    margin-left: 7%;
+}

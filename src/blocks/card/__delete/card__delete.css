@@ -1,0 +1,18 @@
+.card__delete {
+  background: url('../../../images/delete.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #FFFFFF;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  border-radius: 8px;
+}
+
+.card__delete:hover {
+  background: url('../../../images/delete_dark.svg');
+  cursor: url('../../../images/Pointer.png'), pointer;
+}
+.card__delete:focus {
+  outline: none;
+}

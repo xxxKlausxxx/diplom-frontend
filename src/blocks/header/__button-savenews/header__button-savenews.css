@@ -1,0 +1,32 @@
+.header__button-savenews {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  border: 0;
+  padding: 0;
+  outline: none;
+  background-color: transparent;
+  color: #B6BCBF;
+  margin-right: 30px;
+  margin-top: 9px;
+  padding-bottom: 23px;
+}
+
+.header__button-savenews_articles {
+  border-bottom: #1A1B22 solid 3px;
+  color: #1A1B22 !important;
+}
+
+.header__button-savenews:hover {
+  cursor: url('../../../images/Pointer.png'), pointer;
+}
+
+@media (max-width: 655px) {
+  .header__button-savenews {
+    margin-right: 10px;
+    width: 82%;
+    padding-bottom: 0;
+  }
+}

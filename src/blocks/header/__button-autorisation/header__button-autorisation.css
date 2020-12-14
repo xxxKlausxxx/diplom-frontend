@@ -1,0 +1,24 @@
+@import url('./_exit/header__button-autorisation_exit.css');
+
+.header__button-autorisation {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  border-radius: 100px;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid #FFFFFF;
+  color: white;
+  padding: 5% 10% 5% 10%;
+}
+
+.header__button-autorization_articles {
+  border: 1px solid #1A1B22;
+  color: #1A1B22;
+}
+
+.header__button-autorisation:hover {
+  cursor: url('../../../images/Pointer.png'), pointer;
+}

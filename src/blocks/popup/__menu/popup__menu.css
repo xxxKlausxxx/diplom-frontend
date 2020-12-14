@@ -1,0 +1,7 @@
+.popup__menu {
+    background-color: #1A1B22;
+    padding-right: 4% !important;
+    margin-top: 0 !important;
+    position: relative;
+    z-index: 20;
+}

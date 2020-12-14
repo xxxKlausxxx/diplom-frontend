@@ -1,0 +1,41 @@
+@import url('../header/__menu/header__menu.css');
+@import url('../header/__logo/header__logo.css');
+@import url('../header/__list/header__list.css');
+@import url('../header/__button-mine/header__button-mine.css');
+@import url('../header/__button-autorisation/header__button-autorisation.css');
+@import url('../header/__container/header__container.css');
+@import url('../header/__title/header__title.css');
+@import url('../header/__subtitle/header__subtitle.css');
+@import url('../header/__search/header__search.css');
+@import url('../header/__button-search/header__button-search.css');
+@import url('../header/__container_search/header__container_search.css');
+@import url('../header/__button-savenews/header__button-savenews.css');
+@import url('../header/__exit-image/header__exit-image.css');
+@import url('../header/__keywords/header__keywords.css');
+@import url('../header/__dropout-button/header__dropout-button.css');
+@import url('../header/__menu/_popup-mobile/header__menu_popup-mobile.css');
+@import url('../header/__dropout-button/_disable/header__dropout-button_disable.css');
+@import url('../header/__list/_login/header__list_login.css');
+@import url('../header/__dropout-menu/_article/header__dropout-menu_article.css');
+@import url('../header/error/error-search.css');
+
+.header {
+  background-image: url('../../images/header-image.jpg');
+  width: 100%;
+  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header__articles {
+  background-image: none;
+  background-color: white;
+  min-height: 350px;
+}
+
+@media(max-width: 1024px) {
+  .header {
+    min-height: 400px;
+  }
+}

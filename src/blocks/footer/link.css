@@ -1,0 +1,15 @@
+.link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  text-decoration: none;
+  color: black;
+}
+
+@media (max-width: 670px) {
+  .link {
+    line-height: 48px;
+  }
+}

@@ -1,0 +1,27 @@
+.about-author__foto {
+  margin: auto 56px auto 104px;
+  max-width: 460px;
+  width: 45%;
+  height: 70%;
+  object-fit: cover;
+
+}
+
+@media (max-width: 768px) {
+  .about-author__foto {
+    width: 232px;
+    margin-left: 40px;
+    margin-right: 32px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-author__foto {
+    width: 90%;
+    height: auto;
+    object-fit: cover;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+  }
+}

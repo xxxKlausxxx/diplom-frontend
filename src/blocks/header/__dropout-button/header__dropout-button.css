@@ -1,0 +1,11 @@
+.header__dropout-button {
+    outline: none;
+    background-color: transparent;
+    border: 0;
+    display: none;
+}
+@media (max-width: 500px) {
+    .header__dropout-button{
+        display: block;
+    }
+}
