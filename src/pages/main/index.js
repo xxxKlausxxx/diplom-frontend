@@ -29,13 +29,13 @@ import { SHOW_MORE } from '../../js/constans/showMore';
 // Подключение классов
 const mainApi = new MainApi(MAIN_API_URL);
 const newsApi = new NewsApi(NEWS_API_URL, NEWS_API_KEY);
-
 const popupEntry = new Popup(POPUP_ENTRY_OPTIONS);
 const popupReg = new Popup(POPUP_REG_OPTIONS);
 const popupAccess = new Popup(POPUP_ACCESS_OPTIONS);
 const newsCard = new NewsCard(HEADER_OPTIONS, mainApi);
 const newsCardList = new NewsCardList(CARDS_OPTIONS, preloader, notFound, newsCard, SHOW_MORE, HEADER_OPTIONS);
 const header = new Header(HEADER_OPTIONS, popupEntry);
+const validation = new Validation()
 new PopupAccess(POPUP_ACCESS_OPTIONS, popupEntry);
 new PopupEntry(POPUP_ENTRY_OPTIONS, popupReg);
 new PopupReg(POPUP_REG_OPTIONS, popupEntry);
@@ -43,6 +43,7 @@ new FormValidation(new Validation, POPUP_REG_OPTIONS.elements.form);
 new FormValidation(new Validation, POPUP_ENTRY_OPTIONS.elements.form);
 new FormRegistration(POPUP_REG_OPTIONS.elements.form, popupReg, mainApi, popupAccess)
 new FormEntry(POPUP_ENTRY_OPTIONS.elements.form, mainApi, popupEntry, header);
+
 
 
 // Вызов классов
@@ -56,7 +57,10 @@ body.addEventListener('click', (event) => {
 
 HEADER_OPTIONS.elements.buttonSearch.addEventListener('click', () => {
     const keyword = HEADER_OPTIONS.elements.inputSearch.value
-
+    if(HEADER_OPTIONS.elements.inputSearch.value === '') {
+        HEADER_OPTIONS.elements.headerError.classList.remove('error-massage_hidden')
+    }
+    else {
     newsCardList.clearResults()
     newsCardList.renderLoader()
     newsCardList.removeError()
@@ -79,6 +83,7 @@ HEADER_OPTIONS.elements.buttonSearch.addEventListener('click', () => {
         newsCardList.removeLoader()
         console.log(err)
     })
+}
 })
 
 
