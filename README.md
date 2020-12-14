@@ -1,5 +1,16 @@
 # Дипломная работа Yandex.Praktikum (Frontend)
 Реализация фронтенда проекта и работы с API.
+Сайт для поиска и сохранения понравившихся новостей.
+### ver.0.0.1
+
+## Ссылки на проект
+
+### Frontend
+http://diplom-nazarov.students.nomoreparties.co/  
+http://www.diplom-nazarov.students.nomoreparties.co/  
+https://diplom-nazarov.students.nomoreparties.co/  
+https://www.diplom-nazarov.students.nomoreparties.co/  
+ 
 
 ## Инструкции
 1. Клонировать репозиторий.
