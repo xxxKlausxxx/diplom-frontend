@@ -16,7 +16,6 @@ export default class Validation {
         }
     }
     otherValidation(input) {
-        console.log(input.value)
         if (input.length === 0) {
             return false;
         } else {

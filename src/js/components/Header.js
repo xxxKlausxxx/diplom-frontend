@@ -4,7 +4,7 @@ export default class Header {
     this.popup = popup;
     this.render = this.render.bind(this)
 
-    this.setHandlers()
+    this.setEventListeners()
   }
 
   render(isLogedIn, userName) {
@@ -30,13 +30,20 @@ export default class Header {
     window.location.href = "./index.html";
   }
 
-  renderError() {
-    const error = this.options.elements.headerError;
-    error.classList.remove('error-massage_hidden');
-    error.textContent = 'Нужно ввести ключевое слово';
+  checkToken() {
+    const token = localStorage.getItem('token');
+    const userName = localStorage.getItem('name');
+    let isLogedIn = false;
+    if(token) {
+      isLogedIn = true;
+      this.render(isLogedIn, userName)
+    }
+    if (token === 0) {
+      this.render(isLogedIn)
+    }
   }
 
-  setHandlers(){
+  setEventListeners(){
     const header = this.options;
     const exitButton = this.options.elements.exitButton;
     header.elements.headerBtnAuth.addEventListener('click', () => {

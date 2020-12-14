@@ -48,6 +48,8 @@ new FormEntry(POPUP_ENTRY_OPTIONS.elements.form, mainApi, popupEntry, header);
 
 // Вызов классов
 
+header.checkToken()
+
 const body = document.querySelector('body');
 body.addEventListener('click', (event) => {
     event.preventDefault();
