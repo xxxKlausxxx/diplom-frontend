@@ -1,3 +1,3 @@
-const MAIN_API_URL = 'https://www.diplom-nazarov.students.nomoreparties.co';
+const MAIN_API_URL = 'https://api.diplom-nazarov.students.nomoreparties.xyz';
 
 export default MAIN_API_URL;
